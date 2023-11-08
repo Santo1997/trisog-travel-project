@@ -1,0 +1,17 @@
+#root {
+  width: 100%;
+}
+
+.icon-placeholder {
+  position: absolute;
+  left: 10px; /* Adjust the left position to your preference */
+  top: 50%; /* Adjust the top position to center the icon vertically */
+  transform: translateY(-50%);
+  color: #777; /* Icon color */
+  opacity: 1; /* Initially set the opacity to 1 (visible) */
+  transition: opacity 0.3s; /* Add a transition for smooth visibility changes */
+}
+
+.input .icnDisable:focus + .input-icon .icon-placeholder {
+  opacity: 0; /* Hide the icon when the input is focused */
+}
