@@ -4,6 +4,8 @@ import App from "../App.jsx";
 import Home from "../layouts/components/home/Home.jsx";
 import Destination from "../layouts/components/destination/Destination.jsx";
 import About from "../layouts/components/about/About.jsx";
+import Login from "../layouts/components/login/Login.jsx";
+import Signup from "../layouts/components/signup/Signup.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,14 +26,14 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      // {
-      //   path: "/login",
-      //   element: <Login></Login>,
-      // },
-      // {
-      //   path: "/signup",
-      //   element: <Signup></Signup>,
-      // },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <Signup />,
+      },
     ],
   },
 ]);

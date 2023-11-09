@@ -1,10 +1,26 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HeadInfo from "./HeadInfo";
 import Links from "./Links";
 import Activelink from "./Activelink";
 import { BiSearch, BiUser } from "react-icons/bi";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  console.log(user);
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        navigate("/", { replace: true });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <>
       <HeadInfo />
@@ -35,7 +51,7 @@ const Header = () => {
               <Links />
 
               <li>
-                <Activelink to="/all_toys">
+                <Activelink to="/login">
                   <span className="me-10">Login/Signup</span>
                   <span>
                     <BiUser className="text-lg" />
@@ -65,17 +81,38 @@ const Header = () => {
         <div className="navbar-end p-0">
           <ul className="menu menu-horizontal items-center font-bold p-0">
             <li className="hidden md:block">
-              <Activelink to="/all_toys">
-                <BiSearch className="text-lg" />
-              </Activelink>
+              <BiSearch className="text-lg" />
             </li>
             <li>
-              <Activelink to="/all_toys">
-                <span>
-                  <BiUser className="text-lg" />
-                </span>
-                <span>Login/Signup</span>
-              </Activelink>
+              {user ? (
+                <>
+                  <details className="dropdown m-0">
+                    <summary>
+                      <div className="avatar online">
+                        <div className="w-9 rounded-full">
+                          <img src={user.photoURL} />
+                        </div>
+                      </div>
+                      {user.displayName}
+                    </summary>
+
+                    <ul className="shadow menu dropdown-content z-[1] w-fit right-0">
+                      <li>
+                        <button onClick={handleLogOut}>LogOut</button>
+                      </li>
+                    </ul>
+                  </details>
+                </>
+              ) : (
+                <>
+                  <Activelink to="/login">
+                    <span>
+                      <BiUser className="text-lg" />
+                    </span>
+                    <span>Login/Signup</span>
+                  </Activelink>
+                </>
+              )}
             </li>
           </ul>
         </div>
