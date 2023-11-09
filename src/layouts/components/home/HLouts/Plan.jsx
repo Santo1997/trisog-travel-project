@@ -2,8 +2,8 @@ import { BsCheck } from "react-icons/bs";
 
 const Plan = () => {
   return (
-    <div className="h-96 overflow-hidden grid grid-cols-2 mt-5 ">
-      <div className="p-14 relative">
+    <div className="md:h-96 overflow-hidden grid md:grid-cols-2 mt-5 ">
+      <div className="block h-96 md:h-auto p-14 relative">
         <div className="h-full absolute right-14">
           <div className="h-full w-96 block bg-blue-900 relative">
             <div className="h-64 w-[66%] block bg-yellow-400 absolute right-0 top-0"></div>
@@ -11,13 +11,13 @@ const Plan = () => {
               src="./plan_trip.png"
               className="absolute top-[-4rem] h-80 right-[-3rem]"
             />
-            <p className="text-white text-center w-full absolute bottom-24">
+            <p className="text-white text-center w-full absolute bottom-12 md:bottom-24">
               <span className="text-3xl italic">10+</span> Years Of Experiences
             </p>
           </div>
         </div>
       </div>
-      <div className="p-14">
+      <div className="p-20 md:p-14">
         <div className="w-72">
           <div>
             <h2 className="text-lg font-bold italic text-blue-900">
