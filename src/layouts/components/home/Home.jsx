@@ -3,6 +3,9 @@
 // import Plan from "./HLouts/Plan"
 // import TopDesti from "./HLouts/TopDesti";
 // import Features from "./HLouts/Features";
+// import KeepThings from "./HLouts/KeepThings";
+// import Testimonial from "./HLouts/Testimonial";
+import Partners from "./HLouts/Partners";
 
 const Home = () => {
   return (
@@ -12,6 +15,9 @@ const Home = () => {
       {/* <Plan /> */}
       {/* <TopDesti /> */}
       {/* <Features /> */}
+      {/* <KeepThings /> */}
+      {/* <Testimonial /> */}
+      <Partners />
     </>
   );
 };
