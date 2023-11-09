@@ -2,7 +2,7 @@ import { BiPlayCircle } from "react-icons/bi";
 const Partners = () => {
   return (
     <>
-      <div className="grid md:grid-cols-2 py-10 md:p-20 justify-around items-center  bgFormat">
+      <div className="grid md:grid-cols-2 py-10 md:p-20 justify-around items-center partnerBG bgFormat">
         <div className="mb-10 w-96">
           <BiPlayCircle className="text-yellow-400 text-2xl mb-3" />
           <h2 className="text-lg font-bold italic text-yellow-400">

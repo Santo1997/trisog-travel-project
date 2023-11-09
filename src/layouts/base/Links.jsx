@@ -7,7 +7,7 @@ const Links = () => {
         <Activelink to="/">Home</Activelink>
       </li>
       <li>
-        <Activelink to="/all_toys">Destination</Activelink>
+        <Activelink to="/destination">Destination</Activelink>
       </li>
 
       <li>
