@@ -1,12 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 const TopDesti = () => {
   return (
-    <div className="mt-5">
+    <div className="px-5 md:px-20 my-10">
       <div className="relative">
-        <h2 className="text-base font-bold italic text-blue-900">
-          Destination
-        </h2>
-        <h1 className="text-xl font-bold">Top Destinations</h1>
+        <h2 className="text-lg font-bold italic text-blue-900">Destination</h2>
+        <h1 className="text-3xl font-bold">Top Destinations</h1>
 
         <button className="flex gap-2 items-center text-sm absolute right-0 bottom-0">
           <span>See All</span> <FaArrowRight />

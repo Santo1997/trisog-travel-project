@@ -9,10 +9,10 @@ const Header = () => {
     <>
       <HeadInfo />
 
-      <div className="navbar">
+      <div className="navbar w-full">
         <div className="navbar-start w-fit me-5">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden p-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -28,7 +28,6 @@ const Header = () => {
                 />
               </svg>
             </label>
-            {/* dropdown-content */}
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content  mt-3 z-[1] p-2 shadow bg-gray-100 rounded-box w-52 font-bold"
@@ -52,7 +51,7 @@ const Header = () => {
                   <img src="https://i.ibb.co/nn647jt/logo.jpg" />
                 </div>
               </div>
-              <h1 className="btn btn-ghost normal-case text-3xl font-extrabold hover:bg-white">
+              <h1 className="btn btn-ghost normal-case p-1 text-3xl font-extrabold hover:bg-white">
                 Trisog
               </h1>
             </div>
@@ -63,8 +62,8 @@ const Header = () => {
             <Links />
           </ul>
         </div>
-        <div className="navbar-end">
-          <ul className="menu menu-horizontal items-center font-bold ">
+        <div className="navbar-end p-0">
+          <ul className="menu menu-horizontal items-center font-bold p-0">
             <li className="hidden md:block">
               <Activelink to="/all_toys">
                 <BiSearch className="text-lg" />

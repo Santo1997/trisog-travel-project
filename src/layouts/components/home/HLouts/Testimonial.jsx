@@ -6,11 +6,9 @@ const Testimonial = () => {
         backgroundImage: "url(./testimonial.png)",
       }}
     >
-      <div className=" mb-10">
-        <h2 className="text-lg font-bold italic text-blue-900">
-          Why We Are Best
-        </h2>
-        <h1 className="text-3xl font-bold">Keep Things Flexible</h1>
+      <div className="mb-10">
+        <h2 className="text-lg font-bold italic text-blue-900">Testimonial</h2>
+        <h1 className="text-3xl font-bold">What our customer says about us</h1>
       </div>
 
       <p className="grid gap-4 w-96 mx-auto mt-28 font-bold text-sm">

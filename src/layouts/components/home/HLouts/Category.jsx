@@ -8,7 +8,7 @@ const Category = () => {
         <h1 className="text-3xl font-bold">Pick A Tour Type</h1>
       </div>
 
-      <ul className="grid grid-cols-6 mt-5">
+      <ul className="grid grid-cols-3 md:grid-cols-6 mt-5">
         <li className="p-5 hover:shadow-md">
           <img
             src="./cat1.png"

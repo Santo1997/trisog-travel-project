@@ -35,7 +35,7 @@ const CustomInput = ({ heading, icon, placeholder }) => {
         <input
           type="text"
           placeholder={placeholder}
-          className="input input-bordered icnDisable"
+          className="input input-bordered icnDisable w-full"
           value={inputValue}
           onChange={handleInputChange}
           required

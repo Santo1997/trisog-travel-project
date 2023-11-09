@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-// import Footer from "./layouts/base/Footer";
-// import Header from "./layouts/base/Header";
+import Footer from "./layouts/base/Footer";
+import Header from "./layouts/base/Header";
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Outlet></Outlet>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
