@@ -41,7 +41,6 @@ const Destination = () => {
           <ShareLaying />
         </div>
       </div>
-      *
     </div>
   );
 };

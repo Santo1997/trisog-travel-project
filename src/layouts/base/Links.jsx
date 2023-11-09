@@ -9,9 +9,8 @@ const Links = () => {
       <li>
         <Activelink to="/destination">Destination</Activelink>
       </li>
-
       <li>
-        <Activelink to="/blog">About</Activelink>
+        <Activelink to="/about">About</Activelink>
       </li>
     </>
   );
