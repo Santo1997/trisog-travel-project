@@ -7,11 +7,13 @@ import KeepThings from "./HLouts/KeepThings";
 import Testimonial from "./HLouts/Testimonial";
 import Partners from "./HLouts/Partners";
 import Latest from "./HLouts/Latest";
+import UserData from "./HLouts/UserData";
 
 const Home = () => {
   return (
     <>
       <Intro />
+      <UserData />
       <Category />
       <Plan />
       <TopDesti />

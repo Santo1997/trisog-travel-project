@@ -9,4 +9,17 @@ const addToCart = (id, data) => {
   return true;
 };
 
-export { addToCart };
+const getStrdCart = (id) => {
+  let strCart = {};
+  const storedCart = localStorage.getItem("tours-cart");
+
+  if (storedCart) {
+    strCart = JSON.parse(storedCart);
+
+    if (strCart.id === id) {
+      return strCart;
+    }
+  }
+};
+
+export { addToCart, getStrdCart };
