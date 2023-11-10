@@ -1,8 +1,23 @@
-# React + Vite
+# Trisog - Travel Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Trisog, your ultimate companion for planning and embarking on incredible journeys. This readme file provides a quick guide to getting started and making the most of your travel experience with Trisog.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Registration and Login
+- Firebase access
+- Localstore access
+
+## Technology
+
+**Client:** DaisyUI, TailwindCSS , React
+
+**package:**
+
+- `react-hook-form`
+- `react-router`
+- `react-icons`
+
+## 🔗 Links
+
+- [Live Website](https://654dbc20be3cf12d19bbf534--beamish-flan-a850bb.netlify.app/)
