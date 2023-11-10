@@ -1,4 +1,4 @@
-import CustomInput from "./CustomInput";
+import Search from "./Search";
 
 const Intro = () => {
   return (
@@ -15,43 +15,12 @@ const Intro = () => {
             </p>
           </div>
         </div>
-
         <div className="hidden md:block md:absolute md:bottom-14 md:rounded-lg bg-white p-4">
-          <form className="flex md:grid-cols-5 gap-4">
-            <CustomInput
-              heading="Desatination"
-              icon="go"
-              placeholder="   Where to go?"
-            />
-            <CustomInput heading="Type" icon="type" placeholder="   Activity" />
-            <CustomInput heading="When" icon="date" placeholder="   Date" />
-            <CustomInput heading="Guest" icon="guest" placeholder="    0" />
-
-            <div className="form-control mt-8">
-              <button className="btn bg-yellow-400 text-black hover:bg-info">
-                Search
-              </button>
-            </div>
-          </form>
+          <Search />
         </div>
       </div>
       <div className="md:hidden p-8">
-        <form className="grid md:grid-cols-5 gap-4">
-          <CustomInput
-            heading="Desatination"
-            icon="go"
-            placeholder="   Where to go?"
-          />
-          <CustomInput heading="Type" icon="type" placeholder="   Activity" />
-          <CustomInput heading="When" icon="date" placeholder="   Date" />
-          <CustomInput heading="Guest" icon="guest" placeholder="    0" />
-
-          <div className="form-control mt-8">
-            <button className="btn bg-yellow-400 text-black hover:bg-info w-36 mx-auto">
-              Search
-            </button>
-          </div>
-        </form>
+        <Search />
       </div>
     </>
   );

@@ -6,13 +6,13 @@ import Destination from "../layouts/components/destination/Destination.jsx";
 import About from "../layouts/components/about/About.jsx";
 import Login from "../layouts/components/login/Login.jsx";
 import Signup from "../layouts/components/signup/Signup.jsx";
+import Error from "../layouts/components/error/Error.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    // errorElement: <Error />,
-    // loader: () => fetch(`https://assign12-camp-server.vercel.app/courses`),
+    errorElement: <Error />,
     children: [
       {
         path: "/",

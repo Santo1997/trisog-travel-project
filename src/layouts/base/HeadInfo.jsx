@@ -21,9 +21,7 @@ const HeadInfo = () => {
         </span>
         <div className="divider divider-horizontal"></div>
         <select className="bg-gray-200 outline-0">
-          <option disabled selected>
-            Homer
-          </option>
+          <option>Homer</option>
           <option>Marge</option>
           <option>Bart</option>
           <option>Lisa</option>
